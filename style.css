@@ -1,25 +1,35 @@
+/* Importa a fonte 'Poppins' do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+/* Zera as margens e preenchimentos padrão em todos os elementos */
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+/* Define a fonte padrão para o corpo do documento como 'Poppins' */
+body {
     font-family: 'Poppins', sans-serif;
 }
-::selection{
+
+/* Define o estilo de seleção de texto */
+::selection {
     background-color: #04f86e;
     color: #000;
 }
+
+/* Define uma fonte personalizada chamada 'Boston' */
 @font-face {
     font-family: 'Boston';
     src: url(./fonts/NBA\ Celtics.ttf);
 }
+
+/* Estiliza o elemento com o ID 'page' usando o sistema de grid */
 #page {
     display: grid;
     max-width: 100%;
     height: 150vh;
-    gap: 2px;    
+    gap: 2px;
     grid-template-areas:
       "head head head head"
       "main main main asd"
@@ -28,24 +38,34 @@ body{
     grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
 }
-nav ul, footer ul{
+
+/* Estiliza listas não ordenadas dentro de elementos 'nav' e 'footer' */
+nav ul, footer ul {
     list-style: none;
     display: inline;
-    margin-right: 15px;  
-  }
-nav h1{
+    margin-right: 15px;
+}
+
+/* Estiliza o título dentro do elemento 'nav' */
+nav h1 {
     font-family: 'Boston';
     font-size: 25pt;
     letter-spacing: 3px;
     margin-left: 15px;
 }
-li a{
+
+/* Estiliza links dentro de listas */
+li a {
     text-decoration: none;
-    color: white;    
+    color: white;
 }
-li a:hover{
+
+/* Estiliza links quando passam o mouse por cima */
+li a:hover {
     text-decoration: underline;
 }
+
+/* Estiliza o elemento 'main' */
 main {
     grid-area: main;
     background-color: #513921;
@@ -56,33 +76,47 @@ main {
     color: #fff;
     padding: 15px;
 }
-main p{
+
+/* Estiliza parágrafos dentro do elemento 'main' */
+main p {
     text-align: justify;
     margin: 5px;
 }
-main img{
+
+/* Estiliza imagens dentro do elemento 'main' */
+main img {
     width: 500px;
 }
-aside{
+
+/* Estiliza o elemento 'aside' */
+aside {
     grid-area: asd;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-} 
-aside img{
+}
+
+/* Estiliza imagens dentro do elemento 'aside' */
+aside img {
     width: 300px;
     height: auto;
     border-radius: 60%;
 }
-aside h1{
+
+/* Estiliza o título dentro do elemento 'aside' */
+aside h1 {
     justify-content: center;
 }
-aside p{
+
+/* Estiliza parágrafos dentro do elemento 'aside' */
+aside p {
     font-size: 11pt;
     text-align: justify;
 }
+
+/* Estiliza o elemento 'nav' */
 nav {
     grid-area: head;
     background-color: #04771d;
@@ -90,24 +124,34 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;    
+    padding: 5px;
 }
-nav ul{
+
+/* Estiliza listas não ordenadas dentro do elemento 'nav' */
+nav ul {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
-#buscar{
+
+/* Estiliza a entrada de busca no elemento 'nav' */
+#buscar {
     justify-content: space-around;
 }
-nav input{
+
+/* Estiliza caixas de entrada de texto dentro do elemento 'nav' */
+nav input {
     width: 250px;
     height: 30%;
 }
-nav button{
+
+/* Estiliza botões dentro do elemento 'nav' */
+nav button {
     height: 36%;
 }
-.content1{
+
+/* Estiliza o elemento com a classe 'content1' */
+.content1 {
     grid-area: c1;
     background-color: #01401C;
     display: flex;
@@ -116,7 +160,9 @@ nav button{
     flex-direction: column;
     padding: 10px;
 }
-.content2{
+
+/* Estiliza o elemento com a classe 'content2' */
+.content2 {
     grid-area: c2;
     background-color: #BC9959;
     display: flex;
@@ -125,7 +171,9 @@ nav button{
     flex-direction: column;
     padding: 10px;
 }
-.content3{
+
+/* Estiliza o elemento com a classe 'content3' */
+.content3 {
     grid-area: c3;
     background-color: #038C3E;
     display: flex;
@@ -134,6 +182,8 @@ nav button{
     flex-direction: column;
     padding: 10px;
 }
+
+/* Estiliza o elemento 'footer' */
 footer {
     grid-area: foot;
     background-color: #04771d;
@@ -142,11 +192,15 @@ footer {
     justify-content: space-evenly;
     align-items: center;
 }
-footer div ul{
+
+/* Estiliza listas não ordenadas dentro do elemento 'footer' */
+footer div ul {
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
-.content1 img, .content2 img, .content3 img{
+
+/* Estiliza imagens dentro dos elementos 'content1', 'content2' e 'content3' */
+.content1 img, .content2 img, .content3 img {
     width: 190px;
 }
