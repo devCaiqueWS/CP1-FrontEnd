@@ -3,111 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Leanding page, Boston Celtics, basquetebol, NBA"
-    />
-    <meta name="author" content="Caique FIAP" />
-    <meta name="keywords" content="Leanding page, Boston Celtics, basquetebol, NBA" />
-    <meta
-      property="og:image"
-      content="https://www.mythumbnail.com/thumb.jpeg/"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Site de Notícias</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Leanding Page - Boston Celtics</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="page">
-      <nav>
-        <h1>Boston Celtics</h1>
-        <ul>
-          <li><a href="aside">História</a></li>
-          <li><a href="main">Principais titulos</a></li>
-          <li><a href="#content3">As três Dinastias</a></li>
-        </ul>
-      </nav>
-      <main>
-        <p>
-            Entre 1957 e 1969 o Boston de Bill Russell o maior campeão da liga perderam apenas em 67 para o Philadelphia 76ers conquistando o vice-campeonato. <br>
-            Voltando a ser campeões 1974 e se repetindo em 76, 81, 84, 85, 86 e 87 com a dinastia de Larry Bird. <br>
-            Sendo seus 2 ultimos campeonatos conquistados pelo time de Paul Pierce e Kevin Garnet em 2008 e 2010.
+    <!-- Navbar -->
+    <nav
+      id="navbar-example2"
+      class="navbar bg-body-tertiary px-3 mb-3 bg-success"
+    >
+      <a class="navbar-brand text-light" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#scrollspyHeading1">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#scrollspyHeading2"
+            >Disnastias</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#scrollspyHeading3">Titulos</a>
+        </li>
+      </ul>
+    </nav>
 
-        </p>
-        <img src="./img/court.jpg" alt="">
-      </main>
-      <aside>
-        <img src="./img/nba-store-logo.png" alt="RAP" />
-        <h1>História</h1>
-        <p>
-          O Boston Celtics é uma franquia de basquetebol filiada à National
-          Basketball Association e situada na cidade de Boston, no estado
-          americano de Massachusetts. Fundado em 6 de junho de 1946, é uma das
-          únicas equipes que se mantém desde que foi criada. É propriedade da
-          Boston Basketball Partners LCC e joga os seus jogos em casa no TD
-          Garden, dividindo o ginásio com o Boston Bruins da National Hockey
-          League. É conhecido mundialmente por obter 17 títulos da NBA, o que o
-          deixa como o maior vencedor da história da liga junto ao Los Angeles
-          Lakers. <br> Os Celtics possuem uma superioridade em finais (9-3) contra
-          o seu maior rival, o Los Angeles Lakers. <br> A equipe é conhecida por
-          ter sido uma das melhores equipes de basquetebol de todos os tempos,
-          dominando de 1957 a 1969, quando conquistou 11 de 13 campeonatos
-          (perdendo apenas em 1958, para o atual Atlanta Hawks e a edição de
-          1967 o Philadelphia 76ers, venceu o atual Golden State Warriors).
-          <br> Jogadores como Bill Russell, John Havlicek, Bob Cousy
-          e Larry Bird fizeram história nos Celtics. Suas conquistas agrupadas
-          somam um recorde de 795 vitórias e 397 derrotas na temporada regular.
-        </p>
-      </aside>
-      <div class="content1">
-        <h3>1ª Dinastia</h3>
-        <ul>
-            <li>Bill Russell</li>
-            <li>Bob Cousy</li>
-            <li>John Havlicek</li>
-            <li>Sam Jones</li>
-            <li>KC Jones</li>
-        </ul>
-        <img src="./img/russellTeammates.jpg" alt="">
-      </div>
-      <div class="content2">
-        <h3>2ª Dinastia</h3>
-        <ul>
-            <li>Lary Bird</li>
-            <li>Robert Parish</li>
-            <li>kevin McHale</li>
-            <li>Danny Ainge</li>
-            <li>Dennis Johnson</li>
-        </ul>
-        <img src="./img/birdTeammates" alt="">
-      </div>
-      <div class="content3">
-        <h3>3ª Dinastia</h3>
-        <ul>
-            <li>Kevin Garnet</li>
-            <li>Paul Pierce</li>
-            <li>Rajon Rondo</li>
-            <li>Ray Allen</li>
-            <li>Glen Davis</li>
-        </ul>
-        <img src="./img/pirceTeammates.jpg" alt="">
-      </div>
-      <footer>
-        <div>
-          <ul>
-            <li><a href="">Politica de privacidade</a></li>
-            <li><a href="">Termos de serviço</a></li>
-            <li><a href="">Acessibilidade e Segurança</a></li>
-          </ul>
+    <!-- Section -->
+    <section class="container mt-5 mb-5">
+      <article id="scrollspyHeading1" class="row">
+        <!-- Imagem -->
+        <div class="col-md-6">
+          <img
+            src="img/nba-store-logo.png"
+            alt="Imagem Descrição"
+            class="img-fluid"
+          />
         </div>
-        <p>Todos os direitos reservados &copy; 2023</p>
-      </footer>
+        <div class="col-md-6">
+          <h2>História</h2>
+          <p>
+            O Boston Celtics é uma franquia de basquetebol filiada à National
+            Basketball Association e situada na cidade de Boston, no estado
+            americano de Massachusetts. Fundado em 6 de junho de 1946, é uma das
+            únicas equipes que se mantém desde que foi criada. É propriedade da
+            Boston Basketball Partners LCC e joga os seus jogos em casa no TD
+            Garden, dividindo o ginásio com o Boston Bruins da National Hockey
+            League. É conhecido mundialmente por obter 17 títulos da NBA, o que
+            o deixa como o maior vencedor da história da liga junto ao Los
+            Angeles Lakers. <br />
+            Os Celtics possuem uma superioridade em finais (9-3) contra o seu
+            maior rival, o Los Angeles Lakers. <br />
+            A equipe é conhecida por ter sido uma das melhores equipes de
+            basquetebol de todos os tempos, dominando de 1957 a 1969, quando
+            conquistou 11 de 13 campeonatos (perdendo apenas em 1958, para o
+            atual Atlanta Hawks e a edição de 1967 o Philadelphia 76ers, venceu
+            o atual Golden State Warriors). <br />
+            Jogadores como Bill Russell, John Havlicek, Bob Cousy e Larry Bird
+            fizeram história nos Celtics. Suas conquistas agrupadas somam um
+            recorde de 795 vitórias e 397 derrotas na temporada regular.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Carrossel de Imagens com Caption -->
+    <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#newsCarousel" data-slide-to="1"></li>
+        <li data-target="#newsCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Slides -->
+      <div class="carousel-inner" id="scrollspyHeading2">
+        <div class="carousel-item active">
+          <img
+            src="img/russellTeammates.jpg"
+            alt="Notícia 1"
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black">1ª Dinastia</h5>
+            <p class="text-black">
+              Bill Russell - Bob Cousy - John Havlicek - Sam Jones - KC Jones
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/birdTeammates" alt="Notícia 2" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black">2ª Dinastia</h5>
+            <p class="text-black">
+              Lary Bird - Robert Parish - Kevin McHale - Danny Ainge - Dennis
+              Johnson
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/pirceTeammates.jpg"
+            alt="Notícia 3"
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black">3ª Dinastia</h5>
+            <p class="text-black">
+              Kevin Garnet- Paul Pierce- Rajon Rondo- Ray Allen - Glen Davis
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <a
+        class="carousel-control-prev"
+        href="#newsCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#newsCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
     </div>
+    <div class="container mt-5 mb-5" id="scrollspyHeading3">
+      <div class="row">
+        <div class="col-10"><h2>Titulos</h2></div>
+        <div class="col-5">
+          <p>
+            Entre 1957 e 1969 o Boston de Bill Russell o maior campeão da liga
+            perderam apenas em 67 para o Philadelphia 76ers conquistando o
+            vice-campeonato. <br />
+            Voltando a ser campeões 1974 e se repetindo em 76, 81, 84, 85, 86 e
+            87 com a dinastia de Larry Bird. <br />
+            Sendo seus 2 ultimos campeonatos conquistados pelo time de Paul
+            Pierce e Kevin Garnet em 2008 e 2010.
+          </p>
+          <p>
+            O Boston Celtics é uma das equipes mais icônicas da NBA e tem uma
+            longa história de sucesso. A equipe conquistou um impressionante
+            número de títulos de conferência ao longo dos anos, demonstrando sua
+            excelência no basquete. Com um total de 17 títulos de conferência, o
+            Celtics é uma força a ser reconhecida no leste da NBA.
+          </p>
+          <p>
+            O Boston Celtics também teve a honra de ter vários jogadores que
+            foram agraciados com o prêmio de Jogador Mais Valioso (MVP) da NBA.
+            Entre esses jogadores, destacam-se lendas como Bill Russell, Larry
+            Bird e Paul Pierce. Esses MVPs deixaram uma marca indelével na
+            história da franquia e contribuíram significativamente para o
+            sucesso do Boston Celtics ao longo dos anos.
+          </p>
+        </div>
+        <div class="col-5">
+          <img src="img/titulos.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#scrollspyHeading1"
+                  >História</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#scrollspyHeading2"
+                  >Disnastias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#scrollspyHeading3"
+                  >Titulos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Redes Sociais</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Facebook</a></li>
+              <li><a href="#" class="text-white">X</a></li>
+              <li><a href="#" class="text-white">Instagram</a></li>
+            </ul>
+          </div>
+          <!-- Coluna 4 -->
+          <div class="col-md-4 mb-4">
+            <h5>Newletter</h5>
+            <p>Inscreva-se para receber novidades</p>
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">Inscreva-se</button>
+            </form>
+          </div>
+        </div>
+        <hr class="bg-white mb-2" />
+        <div class="row d-flex justify-content-center">
+          <p>&copy; 2023 All rights reserved - Boston Celtics</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
